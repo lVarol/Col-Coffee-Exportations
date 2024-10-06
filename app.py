@@ -3,14 +3,13 @@ import plotly.express as px
 import pandas as pd
 \
 
-app = Dash(
+app = Dash(__name__,
     meta_tags=[
         {"name": "viewport", "content": "width=device-width, initial-scale=1"}
     ]
 )
 
 
-app = dash.Dash(__name__)
 
 server = app.server
 
