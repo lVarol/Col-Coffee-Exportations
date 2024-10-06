@@ -9,6 +9,11 @@ app = Dash(
     ]
 )
 
+
+app = dash.Dash(__name__)
+
+server = app.server
+
 #Load data
 data = pd.read_csv('Book1.csv', encoding='utf-8', delimiter=';')
 data.columns = ['Fecha', 'País de destino', 'Tipo de cafe', 'Sacos de 60 Kg. Exportados']
